@@ -1,3 +1,3 @@
-export function totalPagar (subtotal, calculariva){
-    return subtotal + iva
+export function totalPagar (calcularSubtotal, calcularIva){
+    return calcularSubtotal + calcularIva
 }

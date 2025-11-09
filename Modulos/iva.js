@@ -1,5 +1,5 @@
-export function calcularIva (subtotal){
+export function calcularIva (calcularSubtotal){
     const iva = 0.19
-    return subtotal * iva
+    return calcularSubtotal * iva
 
 }

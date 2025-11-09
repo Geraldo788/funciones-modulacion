@@ -6,9 +6,9 @@ promedio final del estudiante.
 de lo contrario, que reprobó.
 • Aplica operadores lógicos y condicionales */
 
-let nota1 = parseInt(prompt("Ingrese nota 1"));
-let nota2 = parseInt(prompt("Ingrese nota 2"));
-let nota3 = parseInt(prompt("Ingrese nota 3"));
+let nota1 = parseFloat(prompt("Ingrese nota 1"));
+let nota2 = parseFloat(prompt("Ingrese nota 2"));
+let nota3 = parseFloat(prompt("Ingrese nota 3"));
 
 function calcularPromedio (nota1, nota2, nota3){
     return (nota1+nota2+nota3)/3 

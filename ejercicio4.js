@@ -7,17 +7,19 @@ o Una tercera función que retorne el total a pagar.
 
 import {
     calcularIva,
-    subtotal,
+    calcularSubtotal,
     totalPagar,
 } from './Modulos/barril.js'
 
 let cantidad = parseInt(prompt("ingrese la cantidad de articulos"))
 let precio = parseInt(prompt("Ingrese el precio del articulo"))
 
-let ivas = calcularIva(subtotal) 
-let subtotales = subtotal (cantidad, precio)
-let total = totalPagar (subtotal, calcularIva) 
+let subtotales = calcularSubtotal (cantidad, precio)
+let valoriva = calcularIva (subtotales) 
+let total = totalPagar (subtotales, valoriva) 
 
-console.log()
+console.log(`Valor de IVA es: ${valoriva}`)
+console.log(`Subtotal es: ${subtotales}`)
+console.log(`Total es: ${total}`)
 
 

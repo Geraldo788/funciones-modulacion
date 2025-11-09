@@ -1,3 +1,3 @@
-export function subtotal (cantidad, precio){
+export function calcularSubtotal (cantidad, precio){
     return cantidad * precio 
 }
