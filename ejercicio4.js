@@ -9,6 +9,7 @@ import {
     calcularIva,
     calcularSubtotal,
     totalPagar,
+    formateonumero,
 } from './Modulos/barril.js'
 
 let cantidad = parseInt(prompt("ingrese la cantidad de articulos"))
@@ -18,8 +19,8 @@ let subtotales = calcularSubtotal (cantidad, precio)
 let valoriva = calcularIva (subtotales) 
 let total = totalPagar (subtotales, valoriva) 
 
-console.log(`Valor de IVA es: ${valoriva}`)
-console.log(`Subtotal es: ${subtotales}`)
-console.log(`Total es: ${total}`)
+console.log(`Valor de IVA es: ${formateonumero(valoriva)}`)
+console.log(`Subtotal es: ${formateonumero(subtotales)}`)
+console.log(`Total es: ${formateonumero(total)}`)
 
 

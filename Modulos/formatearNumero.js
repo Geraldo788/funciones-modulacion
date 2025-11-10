@@ -1,0 +1,1 @@
+export const formateonumero = (numero) => Intl.NumberFormat('es-co').format(numero);
